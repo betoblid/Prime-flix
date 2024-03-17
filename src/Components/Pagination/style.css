@@ -1,0 +1,12 @@
+
+
+.container-pagination{
+    max-width: 720px;
+    height: 60px;
+    padding-inline: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    gap: 6px;
+}

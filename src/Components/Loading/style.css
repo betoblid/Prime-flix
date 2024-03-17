@@ -1,0 +1,42 @@
+
+
+.container-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.container-loading .circle{
+
+    width: 90px;
+    height: 90px;
+    border-bottom: 4px solid rgb(38, 107, 236);
+    border-right: 4px solid rgb(38, 107, 236);
+    border-radius: 100%;
+    animation: spiner 1s linear infinite;
+}
+
+@keyframes spiner {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* <Suspense fallback={<Loading />}>
+                          {
+                        movies.map((movie) => {
+                            return (
+                                <article key={movie.id}>
+
+                                    <strong>{movie.title}</strong>
+                                    <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
+                                    <Link to={`/filmes/${movie.id}`}>Acessar</Link>
+
+                                </article>
+                            )
+                        })
+                    }
+                    </Suspense> */
